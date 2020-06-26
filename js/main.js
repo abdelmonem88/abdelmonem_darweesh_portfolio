@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//prelouder
-	$('.prelouder-wrapper').delay(1400).fadeOut(500);
+	$('.prelouder-wrapper').delay(2000).fadeOut(500);
 
 	//Sticky navbar
 	$(window).scroll(function() {
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		strings: ['My name is Abdelmoneem', "i'm a front-end Developer"],
 		typeSpeed: 60,
 		backSpeed: 60,
-		startDelay: 0,
+		startDelay: 2500,
 		backDelay: 800,
 		loop: true
 	});
