@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	//prelouder
+	$('.prelouder-wrapper').delay(1400).fadeOut(500);
+
 	//Sticky navbar
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 0) {
@@ -7,11 +10,12 @@ $(document).ready(function() {
 			$('.navbar').removeClass('sticky');
 		}
 	});
+
 	//Typed.js
 	var typed = new Typed('.typed', {
-		strings: ['These are the default values...', 'My name is Abdelmoneem', 'a front-end Developer'],
-		typeSpeed: 80,
-		backSpeed: 80,
+		strings: ['These are the default values...', 'My name is Abdelmoneem', "i'm a front-end Developer"],
+		typeSpeed: 60,
+		backSpeed: 60,
 		startDelay: 0,
 		backDelay: 800,
 		loop: true
@@ -39,9 +43,43 @@ $(document).ready(function() {
 			}
 		});
 	});
-	//add active class to selected btn
+	//add active class to selected portfo;io btn
 	$('#portfolio button').click(function() {
 		$('#portfolio button').removeClass('active');
 		$(this).addClass('active');
+	});
+
+	//totop icon
+	$('.totop').click(function(e) {
+		e.preventDefault();
+		$('html, body').animate(
+			{
+				scrollTop: 0
+			},
+			2000
+		);
+	});
+
+	//smooth scroll to section
+	$('.nav-link').click(function(e) {
+		let sectionId = $(this).attr('href');
+		e.preventDefault();
+		$('html, body').animate(
+			{
+				scrollTop: $(sectionId).offset().top
+			},
+			2000
+		);
+	});
+
+	//sync navlinks with sections
+	$(window).scroll(function() {
+		$('section').each(function() {
+			if ($(window).scrollTop() > $(this).offset().top - 20) {
+				let sectionRef = $(this).attr('id');
+				$('.nav-link').removeClass('active-link');
+				$('.nav-link[href="' + '#' + sectionRef + '"]').addClass('active-link');
+			}
+		});
 	});
 });
