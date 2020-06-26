@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 	//Typed.js
 	var typed = new Typed('.typed', {
-		strings: ['These are the default values...', 'My name is Abdelmoneem', "i'm a front-end Developer"],
+		strings: ['My name is Abdelmoneem', "i'm a front-end Developer"],
 		typeSpeed: 60,
 		backSpeed: 60,
 		startDelay: 0,

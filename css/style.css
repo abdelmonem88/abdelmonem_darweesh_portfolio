@@ -158,9 +158,6 @@ ul {
 }
 
 @media (max-width: 576px) {
-	.navbar.sticky {
-		padding: .5rem !important;
-	}
 	.navbar-brand {
 		font-size: 1.2rem;
 	}
@@ -192,7 +189,8 @@ ul {
 	top: 0;
 	z-index: 999;
 	background-color: var(--black);
-	padding: 0 !important;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 /* End of navbar */
 
