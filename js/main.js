@@ -75,7 +75,7 @@ $(document).ready(function() {
 	//sync navlinks with sections
 	$(window).scroll(function() {
 		$('section').each(function() {
-			if ($(window).scrollTop() > $(this).offset().top - 20) {
+			if ($(window).scrollTop() > $(this).offset().top - 100) {
 				let sectionRef = $(this).attr('id');
 				$('.nav-link').removeClass('active-link');
 				$('.nav-link[href="' + '#' + sectionRef + '"]').addClass('active-link');
