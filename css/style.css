@@ -23,6 +23,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 body {
@@ -69,6 +72,9 @@ ul {
 	height: 100%;
 	background-color: var(--black);
 	animation: goRight1 3s linear infinite;
+	-o-animation: goRight1 3s linear infinite;
+	-moz-animation: goRight1 3s linear infinite;
+	-webkit-animation: goRight1 3s linear infinite;
 }
 .underline::after {
 	content: "";
@@ -79,6 +85,9 @@ ul {
 	height: 100%;
 	background-color: var(--black);
 	animation: goRight2 3s linear infinite;
+	-o-animation: goRight2 3s linear infinite;
+	-moz-animation: goRight2 3s linear infinite;
+	-webkit-animation: goRight2 3s linear infinite;
 }
 
 @keyframes goRight1 {
@@ -86,7 +95,7 @@ ul {
 		left: 2%;
 	}
 	to {
-		left: 81%;
+		left: 115%;
 	}
 }
 @keyframes goRight2 {
@@ -94,7 +103,7 @@ ul {
 		left: 10%;
 	}
 	to {
-		left: 91%;
+		left: 125%;
 	}
 }
 
@@ -136,6 +145,13 @@ ul {
 }
 
 /* Navbar */
+.navbar {
+	transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+}
+
 .navbar-brand {
 	font-family: 'SilvermasonDemoRegular';
 	font-size: 2rem;
@@ -363,10 +379,10 @@ ul {
 	position: absolute;
 	right: 18%;
 	top: 35%;
-	animation-name: goTop;
-	animation-timing-function: linear;
-	animation-duration: 1.5s;
-	animation-iteration-count: infinite;
+	animation: goTop 1s linear infinite;
+	-o-animation: goTop 1s linear infinite;
+	-moz-animation: goTop 1s linear infinite;
+	-webkit-animation: goTop 1s linear infinite;
 }
 
 @keyframes goTop {
