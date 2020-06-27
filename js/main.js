@@ -82,4 +82,10 @@ $(document).ready(function() {
 			}
 		});
 	});
+
+	//nicescroll
+	$('body').niceScroll({
+		cursorcolor: '#1eb3ef',
+		cursorwidth: '8px'
+	});
 });
