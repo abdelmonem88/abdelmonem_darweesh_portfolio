@@ -26,6 +26,7 @@
 	-o-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	outline: unset;
 }
 
 body {
@@ -260,6 +261,7 @@ ul {
 	background-color: var(--white);
 	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 	overflow: hidden;
+	padding: .2rem;
 }
 
 #portfolio .portfolio-item .btn {
@@ -295,10 +297,6 @@ ul {
 
 #portfolio .portfolio-item:hover img {
 	opacity: .3;
-	transform: scale(1.2) rotate(5deg);
-	-o-transform: scale(1.2) rotate(5deg);
-	-moz-transform: scale(1.2) rotate(5deg);
-	-webkit-transform: scale(1.2) rotate(5deg);
 }
 
 /****** Contact ******/
@@ -375,12 +373,12 @@ ul {
 
 .totop i {
 	position: absolute;
-	right: 18%;
+	right: 17%;
 	top: 35%;
-	animation: goTop 1s linear infinite;
-	-o-animation: goTop 1s linear infinite;
-	-moz-animation: goTop 1s linear infinite;
-	-webkit-animation: goTop 1s linear infinite;
+	animation: goTop 1.5s linear infinite;
+	-o-animation: goTop 1.5s linear infinite;
+	-moz-animation: goTop 1.5s linear infinite;
+	-webkit-animation: goTop 1.5s linear infinite;
 }
 
 @keyframes goTop {
@@ -389,12 +387,11 @@ ul {
 		opacity: 0;
 	}
 	50% {
-		top: 15%;
-		opacity: .5;
+		opacity: 1;
 	}
 	100% {
 		top: 0%;
-		opacity: 1;
+		opacity: 0;
 	}
 }
 

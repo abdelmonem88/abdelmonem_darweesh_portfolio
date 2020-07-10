@@ -37,9 +37,9 @@ $(document).ready(function() {
 	$(document).ready(function() {
 		var mixer = mixitup('.mixitup', {
 			animation: {
-				effects: 'fade translateZ(100%)',
+				effects: 'fade translateX(100%)',
 				easing: 'ease-in-out',
-				duration: 500
+				duration: 1000
 			}
 		});
 	});
