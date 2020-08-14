@@ -146,12 +146,12 @@ ul {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
 	transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
-}
+} */
 
 .navbar-brand {
 	font-family: 'SilvermasonDemoRegular';
@@ -190,8 +190,8 @@ ul {
 	top: 0;
 	z-index: 999;
 	background-color: var(--black);
-	padding-top: .3rem;
-	padding-bottom: .3rem;
+	/* padding-top: .3rem;
+	padding-bottom: .3rem; */
 }
 /* End of navbar */
 
